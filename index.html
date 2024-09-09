@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Idade</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: aqua;
+
+        }
+
+        body div {
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            align-items: center;
+            padding-top: 2rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            border-radius: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Verificador de Idade</h1>
+    <div>
+
+        Ano de Nascimento:<input type="number" id="numero">
+        <br>
+        <span>
+            Sexo:
+            <input type="radio" name="sexo" id="mas">
+            <label for="mas">Masculino</label>
+
+            <input type="radio" name="sexo" id="fem">
+            <label for="fem">Feminino</label>
+        </span>
+
+        <button id="botao" onclick="verificar()">Verificar</button>
+        <h4 id="res">Preencha os campos corretamente!</h4>
+    </div>
+
+    <script src="/verificador.js"></script>
+
+</body>
+
+</html>
